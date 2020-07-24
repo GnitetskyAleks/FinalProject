@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Static Template</title>
+</head>
+<body>
+<div class="up_menu">
+    Итог по счету
+    <input class="my_column_button" id="add_operate" type="button" value="+">
+    <input class="my_column_button" id="go_to_category" type="button" value="Кат">
+    <input class="my_column_button" type="button" id="log_cancel" value="LogOut" />
+</div>
+
+<div class="block">
+    <label class="my_label" for="balance">Баланс</label>
+    <input class="my_edit" type="text" id="balance" />
+</div>
+
+<div class="tableContainer">
+    <table id="data_place" >
+    </table>
+</div>
+
+<div class="modal" id="category_modal">
+    <div class="overlay overlay_background_black"></div>
+    <div class="popup">
+        <div class="box">
+            <div class="block">
+                <label>Создание операции</label>
+            </div>
+            <div class="block">
+                <input name="dzen" type="radio" id="Dohod" value="Доход" >Доход
+                <input name="dzen" type="radio" id="Rashod" value="Расход" checked>Расход
+            </div>
+            <div class="block">
+                <select id="list_of_category" size="1" name="category">
+                    </select>
+            </div>
+            <div class="block">
+                <label for="my_summa">Сумма</label>
+                <input id="my_summa" />
+            </div>
+            <div class="block_button">
+                <input class="my_button" type="button" id="category_ok" value="Сохранить" />
+                <input class="my_button" type="button" id="category_cancel" value="Отмена" />
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="module" src="content.js"></script>
+</html>

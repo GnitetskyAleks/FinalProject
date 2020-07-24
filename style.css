@@ -1,0 +1,153 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block {
+    margin: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.my_label {
+   font-size: 120%;
+}
+
+.my_edit {
+    min-height: 20px;
+    /*font-size: 100%;*/
+}
+
+.up_menu {
+    background-color: #05454b ;
+    color: white;
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120%;
+}
+
+.my_button {
+    min-height: 40px;
+}
+
+.my_column_button {
+    min-height: 35px;
+    min-width: 35px;
+    margin: 3px;
+}
+
+.block_button {
+    margin: 4px;
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    font: small-caps bold 24px/1 sans-serif;
+}
+
+.overlay_background_gradient {
+    background: rgb(64, 143, 141);
+    background: linear-gradient(
+            90deg,
+            rgba(64, 143, 141, 1) 0%,
+            rgba(49, 131, 138, 1) 55%,
+            rgba(10, 57, 66, 1) 100%);
+}
+
+.overlay_background_black {
+    opacity: 60%;
+    background: black;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal {
+    display: none;
+}
+
+.popup {
+    background: white;
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    left: 50%;
+    margin-left: -150px;
+    height: 200px;
+    width: 300px;
+    border: 1px solid #666;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*.generateTableContainer {*/
+/*    border: 1px solid black;*/
+/*    border-radius: 5px;*/
+/*    width: 100vw;*/
+/*    padding: 5px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.generateTableContainer > input {*/
+/*    width: 50px;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.generateTableContainer > button {*/
+/*    width: 140px;*/
+/*}*/
+
+.tableContainer {
+    margin-top: 2px;
+}
+
+.tableContainer table {
+    border: none;
+    width: 100vw;
+}
+
+.tableContainer td {
+    padding: 4px;
+    position: relative;
+}
+
+.tableContainer td > input {
+    text-overflow: ellipsis;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid transparent;
+}
+
+.tableContainer td > input:focus  {
+    border-bottom: 2px solid blue;
+}
+
+.tableContainer tbody > tr {
+    font-size: 90%;
+}
+
+.tableContainer tbody > tr:first-child {
+    background-color: grey;
+    color: white;
+}
+
+.tableContainer tr:nth-child(odd) {
+    background-color: bisque;
+}
+.tableContainer tr:nth-child(even) {
+    background-color: cornsilk;
+}

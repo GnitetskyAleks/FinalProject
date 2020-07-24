@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Static Template</title>
+</head>
+<body>
+<div class="up_menu">
+    Категории
+    <input id="add_category" type="button" value="+">
+</div>
+
+<div class="modal" id="category_modal">
+    <div class="overlay overlay_background_black"></div>
+    <div class="popup">
+        <div class="box">
+            <div class="block">
+                <label class="my_label">Название категории</label>
+            </div>
+            <div class="block">
+                <input class="my_edit" id="category_name" />
+            </div>
+            <div class="block_button">
+                <input class="my_button" type="button" id="category_ok" value="Сохранить" />
+                <input class="my_button" type="button" id="category_cancel" value="Отмена" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tableContainer">
+    <table id="data_place" >
+    </table>
+</div>
+
+</body>
+<script type="module" src="category.js"></script>
+</html>
